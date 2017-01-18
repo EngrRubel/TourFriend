@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/classic_colorPrimaryDark"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    tools:context="com.jkkniugmail.rubel.tourfriend.fragments.MapViewFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@color/classic_colorPrimary"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/classic_colorAccent"
+            android:hint="search city for direction"
+            android:id="@+id/dest_city_et"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="@drawable/places_ic_search"
+            android:layout_weight="1"
+            android:id="@+id/search_directionBTN"/>
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/classic_colorPrimaryDark"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:background="@color/classic_colorPrimary"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/classic_colorAccent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:hint="Title"
+            android:maxLines="1"
+            android:id="@+id/event_title_et"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:background="@color/classic_colorPrimary"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/classic_colorAccent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Descrption"
+            android:layout_weight="5"
+            android:id="@+id/event_desctiption_et"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+
+            android:background="@color/classic_colorPrimary"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/classic_colorAccent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Location"
+            android:layout_weight="5"
+            android:id="@+id/event_location_et"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+
+            android:background="@color/classic_colorPrimary"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/classic_colorAccent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:hint="Starting Date"
+            android:id="@+id/event_date_et"
+            android:focusable="false"
+            android:inputType="date"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:background="@color/classic_colorPrimary"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/classic_colorAccent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Budget"
+            android:layout_weight="5"
+            android:id="@+id/event_budget_et"
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_margin="10dp"
+            style="@style/button_text"
+            android:background="@drawable/button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:id="@+id/event_cancel_btn" />
+        <Button
+            android:layout_margin="10dp"
+            style="@style/button_text"
+            android:background="@drawable/button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Ok"
+            android:id="@+id/event_ok_btn"/>
+
+    </LinearLayout>
+
+</LinearLayout>

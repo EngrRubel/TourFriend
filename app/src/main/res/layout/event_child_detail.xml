@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/classic_colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:background="@drawable/side_nav_bar"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/classic_colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="event title"
+                android:id="@+id/event_title"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/progress_bar"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/buget_diagram"/>
+
+                <TextView
+                    android:id="@+id/expense_percent"
+                    android:gravity="center"
+                    android:text="00%"
+                    android:textStyle="bold"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/classic_colorAccent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:id="@+id/remaining_percent"
+                    android:gravity="center"
+                    android:text="100%"
+                    android:textStyle="bold"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/classic_colorAccent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="0 tk"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/classic_colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/expense_tk"/>
+                <TextView
+                    android:text="0 tk"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/classic_colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/remaining_tk"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/classic_colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="description"
+                android:id="@+id/event_description"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/classic_colorAccent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="location"
+                    android:id="@+id/event_location"/>
+
+                <TextView
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/classic_colorAccent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="budget"
+                    android:id="@+id/event_budget"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/classic_colorAccent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="start time"
+                    android:id="@+id/event_start_time"/>
+
+                <TextView
+                    android:gravity="right"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/classic_colorAccent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="count time"
+                    android:id="@+id/event_count_time"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    <ExpandableListView
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exapandable_list_view">
+    </ExpandableListView>
+
+</LinearLayout>

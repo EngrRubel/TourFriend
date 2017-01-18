@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/side_nav_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="25sp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textColor="@color/light"
+        android:textColorHint="@color/light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:textStyle="bold"
+        android:id="@+id/nearby_name"/>
+
+    <TextView
+
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/classic_colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="address"
+        android:id="@+id/nearby_address"/>
+
+
+</LinearLayout>

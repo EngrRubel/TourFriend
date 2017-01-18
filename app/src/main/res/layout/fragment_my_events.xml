@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/classic_colorPrimaryDark"
+    tools:context="com.jkkniugmail.rubel.tourfriend.fragments.MyEvents">
+
+    <TextView
+        android:textStyle="bold"
+        android:background="@color/classic_colorPrimary"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/classic_colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/my_events_head"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/my_event_child">
+    </FrameLayout>
+
+</LinearLayout>

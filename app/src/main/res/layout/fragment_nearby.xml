@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/classic_colorPrimaryDark">
+
+    <TextView
+        android:background="@color/classic_colorPrimary"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/classic_colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:hint="City Name"
+        android:id="@+id/nearby_city_name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="11">
+
+        <Spinner
+            android:layout_marginRight="1dp"
+            style="@style/button_text"
+            android:background="@drawable/gradient_bg"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner_type" />
+        <Spinner
+            style="@style/button_text"
+            android:background="@drawable/gradient_bg"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner_radious" />
+        <TextView
+            style="@style/button_text"
+            android:background="@drawable/gradient_bg"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="Km"/>
+        <Button
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/find_nearby"
+            android:background="@drawable/places_ic_search" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/nearby_list">
+
+    </ListView>
+
+
+</LinearLayout>

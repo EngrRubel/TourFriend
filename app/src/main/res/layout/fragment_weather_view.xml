@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/classic_colorPrimaryDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.jkkniugmail.rubel.tourfriend.fragments.WeatherView">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:layout_marginRight="1dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Current Weather"
+            android:textColor="@color/white"
+            android:background="@drawable/gradient_bg"
+            android:id="@+id/currentBtn"/>
+
+        <Button
+            android:layout_marginLeft="1dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Forecast Weather"
+            android:textColor="@color/white"
+            android:background="@drawable/gradient_bg"
+            android:id="@+id/forecastBtn"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/weather_fragment">
+    </FrameLayout>
+
+
+</LinearLayout>

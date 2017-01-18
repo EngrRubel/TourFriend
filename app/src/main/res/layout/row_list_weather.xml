@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginBottom="30dp"
+    android:background="@drawable/side_nav_bar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:padding="5dp"
+                android:textColorHint="@color/classic_colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light"
+                android:textSize="30sp"
+                android:text="date"
+                android:textStyle="bold"
+                android:id="@+id/fc_date">
+
+            </TextView>
+
+            <TextView
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/classic_colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="description"
+                android:id="@+id/fc_dsc"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fc_icn"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light"
+                    android:textColor="@color/classic_colorPrimary"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="temp"
+                    android:id="@+id/fc_tmp_day"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/classic_colorPrimary"
+                    android:textColor="@color/light"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="temp"
+                    android:id="@+id/fc_tmp_night"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/classic_colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pressure"
+                android:id="@+id/fc_prss"/>
+
+            <TextView
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/classic_colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="wind"
+                android:id="@+id/fc_wind"/>
+            <TextView
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/classic_colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cloud"
+                android:id="@+id/fc_cloud"/>
+
+            <TextView
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/classic_colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hum"
+                android:id="@+id/fc_hum"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

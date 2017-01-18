@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/classic_colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="36dp">
+
+            <TextView
+                android:background="@color/classic_colorPrimary"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/classic_colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Theme.AppCompat"
+                android:text="Add New Axpense"
+                android:gravity="center"
+                android:paddingBottom="5dp"/>
+
+            <EditText
+                android:background="@color/classic_colorPrimaryDark"
+                android:textSize="18sp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/classic_colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Expense Detail"
+                android:id="@+id/expense_detail_et"/>
+            <EditText
+                android:background="@color/classic_colorPrimaryDark"
+                android:textSize="18sp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/classic_colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Expense Amount"
+                android:inputType="numberDecimal"
+                android:id="@+id/expense_amount_et"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button"
+                    style="@style/button_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:id="@+id/expense_add_cancel_btn"/>
+
+                <Button
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button"
+                    style="@style/button_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Ok"
+                    android:id="@+id/expense_add_ok_btn"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

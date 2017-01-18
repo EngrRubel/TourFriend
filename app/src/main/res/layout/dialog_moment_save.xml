@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat"
+    android:background="@color/classic_colorPrimary">
+
+    <TextView
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/classic_colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Moment"/>
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:adjustViewBounds="true"
+        android:id="@+id/captured_image"/>
+
+    <EditText
+        android:background="@color/classic_colorPrimaryDark"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/classic_colorAccent"
+        android:hint="write something........."
+        android:id="@+id/captured_image_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_margin="10dp"
+            style="@style/button_text"
+            android:background="@drawable/button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:id="@+id/moment_cancel_btn" />
+        <Button
+            android:layout_margin="10dp"
+            style="@style/button_text"
+            android:background="@drawable/button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Ok"
+            android:id="@+id/moment_ok_btn"/>
+
+    </LinearLayout>
+
+</LinearLayout>

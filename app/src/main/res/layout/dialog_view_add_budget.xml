@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat"
+    android:background="@color/classic_colorPrimary"
+    android:padding="20dp">
+
+    <TextView
+
+        android:layout_margin="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/classic_colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="More Budget"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <EditText
+
+        android:background="@color/classic_colorPrimaryDark"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/classic_colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="amount"
+        android:inputType="numberDecimal"
+        android:id="@+id/extra_budget"/>
+
+    <Button
+        style="@style/button_text"
+        android:background="@drawable/button"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:id="@+id/extra_budget_ok_btn"/>
+
+</LinearLayout>
